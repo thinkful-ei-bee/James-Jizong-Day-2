@@ -41,17 +41,24 @@ function average(numbers) {
 console.log('The average is:',average(numbers));
   
 
-function repeat(fn, n) {
-    for (let i = 0 ; i < n; i++) {fn};
+
+
+function repeat(fn,n){
+    // loop through 5 times and call function 
+	for (let i = 0;i < n; i++){
+		fn();
+	}
 }
 
-function hello() {
-    console.log('Hello world');
+// hello() handler
+function hello(){
+	console.log("Hello world");
 }
 
-function goodbye(){ 
-    console.log('Goodbye world');
+// goodbye() handler
+function goodbye(){
+	console.log("Goodbye world");
 }
 
-repeat(hello, 5);
-repeat(goodbye, 5);
+repeat(hello,5);
+repeat(goodbye,5);
