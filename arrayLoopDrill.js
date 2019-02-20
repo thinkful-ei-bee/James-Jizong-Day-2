@@ -20,3 +20,7 @@ function min(numbers) {
     }
     return min;
 }
+
+let numbers = [2, 4, 8, 16, 32];
+console.log(max(numbers), min(numbers));
+
