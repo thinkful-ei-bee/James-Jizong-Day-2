@@ -1,5 +1,5 @@
 // James and David Drilling exercise 02/20/2019
-
+'use strict';
 function max(numbers) {
     let counter = 0;
     let max = 0;
@@ -25,6 +25,18 @@ function min(numbers){
 		return min;
 	}
 
-let numbers = [2, 4, 8, 16, 32];
+let numbers = [1,2,3,4,5];
 console.log('max number is:',max(numbers), '\nmin number is:',min(numbers));
 
+
+function average(numbers) {
+    // your code goes here
+    let result = 0;
+  
+    numbers.forEach( number => result += number);
+    return result/numbers.length;
+  }
+  
+
+console.log('The average is:',average(numbers));
+  
