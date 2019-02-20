@@ -58,3 +58,23 @@ turtleStep.map(step => step[0]+step[1]).forEach(step => step<0? console.log(
 	step*-1):console.log(step)
 );
 
+
+
+
+
+let encodedMessage = 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest'
+
+
+
+let wordList = encodedMessage.split(' ');
+
+console.log(wordList.reduce((acc,word)=>
+// ternary operator: if word length===3 add a space 
+// to acc else capitalize the last char then add to acc
+// word.slice(0,word.length-1) every char in a word 
+// except the last char concat the last char in uppercase
+	{console.log('acc',acc,'word',word);
+	console.log('\nif 3 letters:',word.length===3);
+	console.log('\nlast letters cap',word[word.length-1].toUpperCase());
+	(word.length===3) ? acc+=" ":acc+=word[word.length-1].toUpperCase()}
+))
