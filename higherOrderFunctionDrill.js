@@ -37,3 +37,24 @@ const filteredNames = filter(myNames, function(name) {
 
 console.log(filteredNames) // => ['Rich', 'Ray']
 // <---- DO NOT EDIT BETWEEN THESE LINES
+
+
+
+
+
+
+
+
+
+let turtleStep = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]]
+
+turtleStep.filter(step => step[0]>=0 && step[1]>=0 )
+
+turtleStep.map(step => step[0]+step[1])
+
+
+//[ 0, 5, -4, -2, -2, 5 ]
+turtleStep.map(step => step[0]+step[1]).forEach(step => step<0? console.log(
+	step*-1):console.log(step)
+);
+
